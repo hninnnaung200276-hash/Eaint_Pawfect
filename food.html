@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Shop premium dog food, cat food, fish food, and essential pet vitamins in Dawei. Discover expert pet care tips to keep your pets happy and healthy.">
+    <meta name="keywords"
+        content="pet food Dawei, dog food Dawei, cat food Dawei, fish food Dawei, pet vitamins Myanmar, pet care tips Dawei, pet shop Dawei, buy pet food Tanintharyi">
+    <title>Pawfect - Pet Food & Vitamins</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <header class="main-header">
+        <div class="container container-flex">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🐾</span> Pawfect<span>.</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="food.html">Pet Food</a>
+                <a href="caretips.html">Care Tips</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+
+        </div>
+    </header>
+
+    <main>
+        <header class="food-header">
+            <div class="food-header-container">
+
+                <!-- Optional Tag/Badge -->
+                <span class="food-badge">
+                    <i class="fa-solid fa-paw"></i> Premium Pet Nutrition
+                </span>
+
+                <!-- Engaging Headline -->
+                <h1 class="food-title">
+                    Nourish Your pets with <span class="highlight-text">Healthy Meals</span>
+                </h1>
+
+                <!-- Descriptive Subtitle -->
+                <p class="food-subtitle">
+                    From nutrient-packed meals for active dogs and cats to specialized diets for vibrant fish,
+                    we deliver top-quality nutrition designed to keep your pets happy, healthy, and thriving.
+                </p>
+
+                <!-- Call-to-Action Buttons -->
+
+
+            </div>
+
+            <!-- Subtle Decorative Background Circles -->
+            <div class="decor-circle decor-1"></div>
+            <div class="decor-circle decor-2"></div>
+        </header>
+        <section class="filter-section container">
+            <div class="filter-title">
+                <h2>Select Your Pet Category</h2>
+                <p>Click on a pet to view their specific food products</p>
+            </div>
+
+            <div class="pet-selector-grid">
+                <div class="pet-card active" data-target="cat">
+                    <div class="pet-img-wrapper">
+                        <img src="cat.jpg" alt="Cats">
+                    </div>
+                    <h3>Cats Food</h3>
+                </div>
+
+                <div class="pet-card" data-target="dog">
+                    <div class="pet-img-wrapper">
+                        <img src="dog.jpg" alt="Dogs">
+                    </div>
+                    <h3>Dogs Food</h3>
+                </div>
+
+                <div class="pet-card" data-target="fish">
+                    <div class="pet-img-wrapper">
+                        <img src="fish.jpg" alt="Fish">
+                    </div>
+                    <h3>Fish Food</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-display-section container">
+            <div class="products-showcase-grid">
+
+
+
+                <!-- Whiskas -->
+                <div class="product-item" data-category="cat">
+                    <div class="prod-img-box">
+                        <img src="cat_whiskas.webp" alt="Whiskas Cat Food" loading="lazy">
+                    </div>
+                    <div class="prod-details">
+                        <h4>Whiskas</h4>
+                        <p class="price">22000MMK</p>
+                        <a class="order-now-btn" href="order.html?product=Whiskas">
+                            <i class="fa-solid fa-cart-shopping"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bellotta -->
+                <div class="product-item" data-category="cat">
+                    <div class="prod-img-box">
+                        <img src="cat_bellota.webp" alt="Bellotta Cat Food" loading="lazy">
+                    </div>
+                    <div class="prod-details">
+                        <h4>Bellotta</h4>
+                        <p class="price">60000MMK</p>
+                        <a class="order-now-btn" href="order.html?product=Bellotta">
+                            <i class="fa-solid fa-cart-shopping"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Royal Canin -->
+                <div class="product-item" data-category="cat">
+                    <div class="prod-img-box">
+                        <img src="cat_royal.webp" alt="Royal Canin Cat Food" loading="lazy">
+                    </div>
+                    <div class="prod-details">
+                        <h4>Royal Canin</h4>
+                        <p class="price">20000MMK</p>
+                        <a class="order-now-btn" href="order.html?product=RoyalCanin">
+                            <i class="fa-solid fa-cart-shopping"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 9Lives -->
+                <div class="product-item" data-category="cat">
+                    <div class="prod-img-box">
+                        <img src="cat_9lives.webp" alt="9Lives Cat Food" loading="lazy">
+                    </div>
+                    <div class="prod-details">
+                        <h4>9Lives</h4>
+                        <p class="price">50000MMK</p>
+                        <a class="order-now-btn" href="order.html?product=9Lives">
+                            <i class="fa-solid fa-cart-shopping"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="product-item hide" data-category="dog">
+                    <div class="prod-img-box">
+                        <img src="dog_logo.webp" alt="Dog Food 1" loading="lazy">
+                    </div>
+                    <div class="prod-details">
+                        <h4>Logo</h4>
+                        <p class="price">22500MMK</p>
+                        <a class="order-now-btn" href="order.html?product=Logo"><i
+                                class="fa-solid fa-cart-shopping"></i>
+                            Order Now</a>
+                    </div>
+                </div>
+
+                <div class="product-item hide" data-category="dog">
+                    <div class="prod-img-box">
+                        <img src="dog_pedigree.webp" alt="Dog Food 2" loading="lazy">
+                    </div>
+                    <div class="prod-details">
+                        <h4>Pedigree</h4>
+                        <p class="price">25000MMK</p>
+                        <a class="order-now-btn" href="order.html?product=Pedigree"><i
+                                class="fa-solid fa-cart-shopping"></i> Order Now</a>
+                    </div>
+                </div>
+
+                <div class="product-item hide" data-category="dog">
+                    <div class="prod-img-box">
+                        <img src="dog_purini.webp" alt="Dog Food 3" loading="lazy">
+                    </div>
+                    <div class="prod-details">
+                        <h4>Purina</h4>
+                        <p class="price">27500MMK</p>
+                        <a class="order-now-btn" href="order.html?product=Purina"><i
+                                class="fa-solid fa-cart-shopping"></i>
+                            Order Now</a>
+                    </div>
+                </div>
+
+                <div class="product-item hide" data-category="dog">
+                    <div class="prod-img-box">
+                        <img src="dog_snappy.webp" alt="Dog Food 4" loading="lazy">
+                    </div>
+                    <div class="prod-details">
+                        <h4>Snappy Snacks</h4>
+                        <p class="price">30000MMK</p>
+                        <a class="order-now-btn" href="order.html?product=Snappy"><i
+                                class="fa-solid fa-cart-shopping"></i>
+                            Order Now</a>
+                    </div>
+                </div>
+
+                <div class="product-item hide" data-category="fish">
+                    <div class="prod-img-box">
+                        <img src="fish_tetra.webp" alt="Fish Food 1" loading="lazy">
+                    </div>
+                    <div class="prod-details">
+                        <h4>Tetra</h4>
+                        <p class="price">12500MMK</p>
+                        <a class="order-now-btn" href="order.html?product=Tetra"><i
+                                class="fa-solid fa-cart-shopping"></i> Order Now</a>
+                    </div>
+                </div>
+
+                <div class="product-item hide" data-category="fish">
+                    <div class="prod-img-box">
+                        <img src="fish_sticks.webp" alt="Fish Food 2" loading="lazy">
+                    </div>
+                    <div class="prod-details">
+                        <h4>Sticks</h4>
+                        <p class="price">15000MMK</p>
+                        <a class="order-now-btn" href="order.html?product=Sticks"><i
+                                class="fa-solid fa-cart-shopping"></i> Order Now</a>
+                    </div>
+                </div>
+
+                <div class="product-item hide" data-category="fish">
+                    <div class="prod-img-box">
+                        <img src="fish_aqua.webp" alt="Fish Food 3" loading="lazy">
+                    </div>
+                    <div class="prod-details">
+                        <h4>Aquascape</h4>
+                        <p class="price">17500MMK</p>
+                        <a class="order-now-btn" href="order.html?product=Aquascape"><i
+                                class="fa-solid fa-cart-shopping"></i> Order Now</a>
+                    </div>
+                </div>
+
+                <div class="product-item hide" data-category="fish">
+                    <div class="prod-img-box">
+                        <img src="fish_aquanutri.webp" alt="Fish Food 4" loading="lazy">
+                    </div>
+                    <div class="prod-details">
+                        <h4>AquaNutri</h4>
+                        <p class="price">20000MMK</p>
+                        <a class="order-now-btn" href="order.html?product=Aquanutri"><i
+                                class="fa-solid fa-cart-shopping"></i> Order Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script>
+        document.querySelectorAll('.pet-card').forEach(card => {
+            card.addEventListener('click', function () {
+                // Remove active status from all selection cards
+                document.querySelectorAll('.pet-card').forEach(c => c.classList.remove('active'));
+                // Add active status to clicked card
+                this.classList.add('active');
+
+                const selectedCategory = this.getAttribute('data-target');
+
+                // Filter products logic ("all" category support included)
+                document.querySelectorAll('.product-item').forEach(item => {
+                    const itemCategory = item.getAttribute('data-category');
+                    if (selectedCategory === 'all' || itemCategory === selectedCategory) {
+                        item.classList.remove('hide');
+                    } else {
+                        item.classList.add('hide');
+                    }
+                });
+            });
+        });
+
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+        document.getElementById('subscribeForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            alert('Thanks for subscribing!');
+            this.reset();
+        });
+    </script>
+
+
+
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="margin-bottom: 15px;">
+                    <span class="logo-icon">🐾</span> Pawfect<span>.</span>
+                </a>
+                <p>We provide the best premium quality food and essential vitamins for your beloved pets to keep them
+                    healthy and happy.</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/" aria-label="Visit our facebook page"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://x.com/" aria-label="Visit our Twitter page"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/?hl=en" aria-label="Visit our Instagram page"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/" aria-label="Visit our Pinterest page"><i
+                            class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="food.html">Pet Food</a></li>
+                    <li><a href="caretips.html">Care Tips</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-location-dot"></i> 123 Rose Street, Dawei</li>
+                    <li><i class="fa-solid fa-phone"></i> +95 242 242 444</li>
+                    <li><i class="fa-solid fa-envelope"></i> pawfect@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get the latest updates, discounts, and pet care tips.</p>
+                <form class="footer-subscribe-form" id="subscribeForm">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" aria-label="Subscribe to Newsletter"><i
+                            class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container container-flex footer-bottom-flex">
+                <p>&copy; 2026 Marten. All Rights Reserved.</p>
+                <p class="developer-credit">Designed & Developed by Eaint Phoo Thwe</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

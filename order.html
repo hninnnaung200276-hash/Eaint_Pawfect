@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Shop premium dog food, cat food, fish food, and essential pet vitamins in Dawei. Discover expert pet care tips to keep your pets happy and healthy.">
+    <meta name="keywords"
+        content="pet food Dawei, dog food Dawei, cat food Dawei, fish food Dawei, pet vitamins Myanmar, pet care tips Dawei, pet shop Dawei, buy pet food Tanintharyi">
+    <title>Pawfect - Pet Food & Vitamins</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container container-flex">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🐾</span> Pawfect<span>.</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="food.html">Pet Food</a>
+                <a href="caretips.html">Care Tips</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+
+        </div>
+    </header>
+
+    <main>
+        <section class="order-hero">
+            <div class="container">
+                <p>Secure and simple checkout</p>
+                <h1>Complete Your Order</h1>
+                <div class="checkout-steps" aria-label="Checkout progress">
+                    <span class="done"><i class="fa-solid fa-basket-shopping"></i> Product</span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span class="current"><i class="fa-solid fa-truck-fast"></i> Delivery</span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span><i class="fa-solid fa-circle-check"></i> Confirmation</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="checkout-section container">
+            <form id="checkoutForm" class="checkout-grid" novalidate>
+                <div class="checkout-main">
+                    <div class="checkout-card">
+                        <div class="checkout-card-title"><span>1</span>
+                            <div>
+                                <h2>Contact Information</h2>
+                                <p>We will use these details for delivery updates.</p>
+                            </div>
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-group"><label for="fullName">Full Name *</label><input id="fullName"
+                                    name="fullName" type="text" autocomplete="name" placeholder="Enter your full name"
+                                    required><small class="field-error"></small></div>
+                            <div class="form-group"><label for="phone">Phone Number *</label><input id="phone"
+                                    name="phone" type="tel" autocomplete="tel" placeholder="e.g. 09 123 456 789"
+                                    required><small class="field-error"></small></div>
+                            <div class="form-group full"><label for="email">Email Address *</label><input id="email"
+                                    name="email" type="email" autocomplete="email" placeholder="you@example.com"
+                                    required><small class="field-error"></small></div>
+                        </div>
+                    </div>
+
+                    <div class="checkout-card">
+                        <div class="checkout-card-title"><span>2</span>
+                            <div>
+                                <h2>Delivery Address</h2>
+                                <p>Tell us where your pet supplies should be delivered.</p>
+                            </div>
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-group full"><label for="address">Street Address *</label><input
+                                    id="address" name="address" type="text" autocomplete="street-address"
+                                    placeholder="House number and street name" required><small
+                                    class="field-error"></small></div>
+                            <div class="form-group"><label for="city">City *</label><input id="city" name="city"
+                                    type="text" autocomplete="address-level2" placeholder="Your city" required><small
+                                    class="field-error"></small></div>
+                            <div class="form-group"><label for="postal">Township *</label><input id="postal"
+                                    name="postal" type="text" placeholder="Your township" required><small
+                                    class="field-error"></small></div>
+                            <div class="form-group full"><label for="notes">Delivery Notes</label><textarea id="notes"
+                                    name="notes" rows="3"
+                                    placeholder="Apartment, landmark, gate instructions, or other notes"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="checkout-card">
+                        <div class="checkout-card-title"><span>3</span>
+                            <div>
+                                <h2>Payment Method</h2>
+                                <p>Select how you would like to pay.</p>
+                            </div>
+                        </div>
+                        <div class="payment-options">
+                            <label class="payment-option active"><input type="radio" name="payment" value="kbzpay"
+                                    checked><span class="payment-logo kbz-logo">K</span><span><strong>KBZ
+                                        Pay</strong><small>Pay with your KBZPay wallet</small></span><i
+                                    class="fa-solid fa-circle-check check"></i></label>
+                            <label class="payment-option"><input type="radio" name="payment" value="wavepay"><span
+                                    class="payment-logo wave-logo">W</span><span><strong>Wave Pay</strong><small>Pay
+                                        with your Wave Money wallet</small></span><i
+                                    class="fa-solid fa-circle-check check"></i></label>
+                            <label class="payment-option"><input type="radio" name="payment" value="ayapay"><span
+                                    class="payment-logo aya-logo">A</span><span><strong>AYA Pay</strong><small>Pay with
+                                        your AYA Pay wallet</small></span><i
+                                    class="fa-solid fa-circle-check check"></i></label>
+                            <label class="payment-option"><input type="radio" name="payment" value="cod"><i
+                                    class="fa-solid fa-money-bill-wave"></i><span><strong>Cash on
+                                        Delivery</strong><small>Pay in cash when your order arrives</small></span><i
+                                    class="fa-solid fa-circle-check check"></i></label>
+                        </div>
+                        <div id="paymentDetails" class="wallet-details">
+                            <div class="wallet-detail active" data-wallet="kbzpay">
+                                <div><span class="payment-logo kbz-logo">K</span>
+                                    <div><strong>KBZ Pay Account</strong>
+                                        <p>Transfer the order total to this account.</p>
+                                    </div>
+                                </div>
+                                <dl>
+                                    <div>
+                                        <dt>Phone Number</dt>
+                                        <dd>09 777 123 456</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Account Name</dt>
+                                        <dd>Marten Pet Food</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                            <div class="wallet-detail" data-wallet="wavepay">
+                                <div><span class="payment-logo wave-logo">W</span>
+                                    <div><strong>Wave Pay Account</strong>
+                                        <p>Transfer the order total to this account.</p>
+                                    </div>
+                                </div>
+                                <dl>
+                                    <div>
+                                        <dt>Phone Number</dt>
+                                        <dd>09 788 123 456</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Account Name</dt>
+                                        <dd>Marten Pet Food</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                            <div class="wallet-detail" data-wallet="ayapay">
+                                <div><span class="payment-logo aya-logo">A</span>
+                                    <div><strong>AYA Pay Account</strong>
+                                        <p>Transfer the order total to this account.</p>
+                                    </div>
+                                </div>
+                                <dl>
+                                    <div>
+                                        <dt>Phone Number</dt>
+                                        <dd>09 799 123 456</dd>
+                                    </div>
+                                    <div>
+                                        <dt>Account Name</dt>
+                                        <dd>Pawfect Pet Food</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                            <div class="wallet-detail cod-detail" data-wallet="cod">
+                                <div><i class="fa-solid fa-truck-fast"></i>
+                                    <div><strong>Cash on Delivery</strong>
+                                        <p>Please prepare the exact amount. Our delivery team will collect payment when
+                                            your order arrives.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="order-summary checkout-card">
+                    <h2>Order Summary</h2>
+                    <div class="summary-product">
+                        <img id="summaryImage"
+                            src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&q=80&w=300"
+                            alt="Selected pet food">
+                        <div>
+                            <h3 id="summaryName">Dog Calcium Premium Food</h3>
+                            <p>Premium pet nutrition</p>
+                            <div class="quantity-control"><button type="button" id="minusQty"
+                                    aria-label="Decrease quantity">−</button><input id="quantity" type="number" min="1"
+                                    max="20" value="1" aria-label="Quantity"><button type="button" id="plusQty"
+                                    aria-label="Increase quantity">+</button></div>
+                        </div>
+                        <strong id="itemTotal">20,000 MMK</strong>
+                    </div>
+                    <div class="summary-lines">
+                        <div><span>Subtotal</span><strong id="subtotal">20,000 MMK</strong></div>
+                        <div><span>Delivery</span><strong id="shipping">3,000 MMK</strong></div>
+                    </div>
+                    <div class="summary-total"><span>Total</span><strong id="grandTotal">23,000 MMK</strong></div>
+                    <button class="place-order-btn" type="submit"><i class="fa-solid fa-lock"></i> Place Order</button>
+                    <p class="secure-note"><i class="fa-solid fa-shield-halved"></i> Your checkout information is
+                        protected.</p>
+                    <a class="continue-shopping" href="food.html"><i class="fa-solid fa-arrow-left"></i> Continue
+                        Shopping</a>
+                </aside>
+            </form>
+        </section>
+    </main>
+
+    <div id="successModal" class="success-modal" role="dialog" aria-modal="true" aria-labelledby="successTitle" hidden>
+        <div class="success-box">
+            <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+            <h2 id="successTitle">Order Confirmed!</h2>
+            <p>Thank you, <strong id="customerName"></strong>. Your order number is <strong id="orderNumber"></strong>.
+            </p>
+            <p class="success-detail">A confirmation has been prepared for your delivery.</p><a href="index.html"
+                class="btn-shop">Back to Home</a>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="margin-bottom: 15px;">
+                    <span class="logo-icon">🐾</span> Pawfect<span>.</span>
+                </a>
+                <p>We provide the best premium quality food and essential vitamins for your beloved pets to keep them
+                    healthy and happy.</p>
+                 <div class="footer-socials">
+                    <a href="https://www.facebook.com/" aria-label="Visit our facebook page"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://x.com/" aria-label="Visit our Twitter page"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/?hl=en" aria-label="Visit our Instagram page"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/" aria-label="Visit our Pinterest page"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="food.html">Pet Food</a></li>
+                    <li><a href="caretips.html">Care Tips</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-location-dot"></i> 123 Rose Street, Dawei</li>
+                    <li><i class="fa-solid fa-phone"></i> +95 242 242 444</li>
+                    <li><i class="fa-solid fa-envelope"></i> pawfect@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get the latest updates, discounts, and pet care tips.</p>
+                <form class="footer-subscribe-form" id="subscribeForm">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" aria-label="Subscribe to Newsletter"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container container-flex footer-bottom-flex">
+                <p>&copy; 2026 Marten. All Rights Reserved.</p>
+                <p class="developer-credit">Designed & Developed by Eaint Phoo Thwe</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('subscribeForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            alert('Thanks for subscribing!');
+            this.reset();
+        });
+    </script>
+    <script src="order.js"></script>
+</body>
+
+</html>
